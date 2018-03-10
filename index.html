@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Bestcom Bell — heating / ventilation / air-conditioning</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1504.83">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/10up-sanitize.css/5.0.0/sanitize.min.css" integrity="sha256-qNrgGqSO9Xu/fUg5vIi1xwbnOleSZRAidBaJ8U4qEy8=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700i" rel="stylesheet">
+  <link href="css/colors-material.css" rel="stylesheet">
+  <style>
+    ::selection {
+      background: var(--grey-900);
+      color: var(--grey-50);
+    }
+    body {
+      text-align: center;
+      background-color: var(--grey-50);
+      font-family: 'Nunito Sans', sans-serif;
+      color: var(--grey-900);
+    }
+    h1 {
+      font-style: italic;
+      color: var(--blue-grey-700);
+    }
+    h1 a:nth-of-type(2) {
+      color: var(--teal-a700);
+    }
+    a {
+      text-decoration: inherit;
+      color: inherit;
+    }
+    a:hover {
+      color: var(--blue-grey-800);
+    }
+    ul {
+      padding: inherit;
+    }
+    header li {
+      display: inline-block;
+      padding: 0 .4rem 0 .4rem;
+    }
+    header li:nth-of-type(2) {
+      padding: 0 .5rem 0 .5rem;
+      border-width: 0 .1rem 0 .1rem;
+      border-style: solid;
+    }
+    section {
+      filter: grayscale(90%); /*+ parallax -> -*/
+    }
+    #about {
+      /*
+      ? D + parallax
+      background-image: url("img/banner.jpg");
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      */
+      height: 100vh; /*D calc(100vh - 25rem)*/
+      font-weight: 300;
+    }
+    #about h2 {
+      padding-top: 5%;
+    }
+    h2 {
+      font-weight: 300;
+      color: var(--grey-800);
+    }
+    #about p {
+      color: var(--grey-700);
+    }
+    #portfolio {
+      height: 100vh; /*?| 100vw*/
+    }
+    figure {
+      margin: 1% auto;
+      height: 42.5%; /*| calc(100vh * 40 / 100)*/
+    }
+    footer {
+      margin-bottom: 16.5%;
+      background: var(--grey-100);
+    }
+    
+    @media (min-width:568px) {
+      figure {
+        width: 42.5%;
+      }
+      footer {
+        margin-bottom: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Bestcom </a><a href="index.html">Bell</a></h1>
+    <nav>
+      <ul>
+        <li><a href="#about">about</a></li>
+        <li><a href="#portfolio">portfolio</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <article id="about">
+      <h2>Heating / Ventilation / Air-Conditioning</h2>
+      <p>We bring 8+ years of experience in both commercial and residential settings.<br>
+        Our dependable, detail-oriented technicians speak both English and Russian<br>
+        and will take care of your system's installation, testing, and maintenance.</p>
+    </article>
+    <article id="portfolio">
+      <h2>Past Work</h2>
+      <figure></figure>
+      <figure></figure>
+    </article>
+  </section>
+  <footer id="contact">
+    <h2>Contact Us</h2>
+    <ul>
+      <li><a href="tel:+17183109119">(718) 310-9119</a></li>
+      <li><a href="mailto:gsn8878@gmail.com">Email Us</a></li>
+      <li><a href="#">YELP</a></li>
+      <li><a href="#">FB</a></li>
+    </ul>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script src="js/jquery.backstretch.min.js"></script>
+<!--  <script src="js/jquery.smooth-scroll.min.js"></script>-->
+  <script>
+    $("#about").backstretch("img/banner.jpg");
+    $("figure:first").backstretch([
+      "img/out-1.jpg",
+      "img/out-2.jpg",
+      "img/out-3.jpg",
+      "img/out-4.jpg"
+    ], {duration: 5000});
+    $("figure:last").backstretch([
+      "img/in-1.jpg",
+      "img/in-2.jpg",
+      "img/in-3.jpg",
+      "img/in-4.jpg",
+      "img/in-5.jpg",
+      "img/in-6.jpg",
+      "img/in-7.jpg",
+      "img/in-8.jpg"
+    ], {duration: 2500});
+  </script>
+</body>
+</html>
+
+<!--an OCD design-->
+
+<!--! validate HTML 7 CSS-->
