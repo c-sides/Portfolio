@@ -10,40 +10,36 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700i" rel="stylesheet">
   <link href="css/colors-material.css" rel="stylesheet">
   <style>
-    ::selection {
-      background: var(--grey-900);
-      color: var(--grey-50);
-    }
     body {
-      text-align: center;
-      background-color: var(--grey-50);
-      font-family: 'Nunito Sans', sans-serif;
+      background: var(--grey-50);
       color: var(--grey-900);
+      font-family: 'Nunito Sans', sans-serif;
+      text-align: center;
     }
     h1 {
-      font-style: italic;
       color: var(--blue-grey-700);
+      font-style: italic;
     }
     h1 a:nth-of-type(2) {
       color: var(--teal-a700);
     }
     a {
-      text-decoration: inherit;
       color: inherit;
+      text-decoration: inherit;
     }
     a:hover {
-      color: var(--blue-grey-800);
+      color: var(--blue-grey-700);
     }
     ul {
       padding: inherit;
     }
     header li {
+      padding: 0 .4rem;
       display: inline-block;
-      padding: 0 .4rem 0 .4rem;
     }
     header li:nth-of-type(2) {
-      padding: 0 .5rem 0 .5rem;
-      border-width: 0 .1rem 0 .1rem;
+      padding: 0 .5rem;
+      border-width: 0 .1rem;
       border-style: solid;
     }
     section {
@@ -57,37 +53,42 @@
       background-size: cover;
       background-position: center;
       */
-      height: 100vh; /*D calc(100vh - 25rem)*/
+      height: 100vh;
       font-weight: 300;
     }
     #about h2 {
       padding-top: 5%;
     }
     h2 {
-      font-weight: 300;
       color: var(--grey-800);
+      font-weight: 300;
     }
-    #about p {
+    p {
       color: var(--grey-700);
     }
     #portfolio {
-      height: 100vh; /*?| 100vw*/
+      height: 100vh;
     }
     figure {
-      margin: 1% auto;
-      height: 42.5%; /*| calc(100vh * 40 / 100)*/
+      margin: 5% auto;
+      height: 42.5%;
     }
     footer {
-      margin-bottom: 16.5%;
+      margin-bottom: 12.5%;
       background: var(--grey-100);
+    }
+    ::selection {
+      background: var(--grey-900);
+      color: var(--grey-50);
     }
     
     @media (min-width:568px) {
-      figure {
-        width: 42.5%;
+      #portfolio {
+        margin-bottom: 7.5%;
+        height: 100vw;
       }
       footer {
-        margin-bottom: 0;
+        margin-bottom: 7.5%;
       }
     }
   </style>
