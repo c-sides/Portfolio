@@ -17,6 +17,7 @@
       text-align: center;
     }
     h1 {
+      width: 100vw;
       color: var(--blue-grey-700);
       font-style: italic;
     }
@@ -37,7 +38,10 @@
       padding: 0 .4rem;
       display: inline-block;
     }
-    header li:nth-of-type(2) {
+    header li:nth-of-type(1) {
+      padding: 0;
+    }
+    header li:nth-of-type(3) {
       padding: 0 .5rem;
       border-width: 0 .1rem;
       border-style: solid;
@@ -56,12 +60,12 @@
       height: 100vh;
       font-weight: 300;
     }
-    #about h2 {
-      padding-top: 5%;
-    }
     h2 {
       color: var(--grey-800);
       font-weight: 300;
+    }
+    #about h2 {
+      padding-top: 5%;
     }
     p {
       color: var(--grey-700);
@@ -74,7 +78,7 @@
       height: 42.5%;
     }
     footer {
-      margin-bottom: 12.5%;
+      margin-bottom: 15%;
       background: var(--grey-100);
     }
     ::selection {
@@ -91,13 +95,46 @@
         margin-bottom: 7.5%;
       }
     }
+    
+    @media (min-width:1366px) {
+      body {
+        font-size: 150%;
+      }
+      header {
+        padding-left: 2.5%;
+        text-align: left;
+      }
+      header li {
+        padding: .5rem;
+      }
+      header li:nth-of-type(3) {
+        padding: 0;
+        border: none;
+      }
+      h1 {
+        width: 20rem;
+      }
+      p {
+        font-size: 70%;
+      }
+    }
+    
+    @media (min-width:1920px) {
+      body {
+        font-size: 300%;
+      }
+      h1 {
+        width: 35rem;
+        font-size: 150%;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1><a href="index.html">Bestcom </a><a href="index.html">Bell</a></h1>
     <nav>
       <ul>
+        <li><h1><a href="index.html">Bestcom </a><a href="index.html">Bell</a></h1></li>
         <li><a href="#about">about</a></li>
         <li><a href="#portfolio">portfolio</a></li>
         <li><a href="#contact">contact</a></li>
@@ -131,27 +168,29 @@
   <script src="js/jquery.backstretch.min.js"></script>
 <!--  <script src="js/jquery.smooth-scroll.min.js"></script>-->
   <script>
-    $("#about").backstretch("img/banner.jpg");
-    $("figure:first").backstretch([
-      "img/out-1.jpg",
-      "img/out-2.jpg",
-      "img/out-3.jpg",
-      "img/out-4.jpg"
-    ], {duration: 5000});
-    $("figure:last").backstretch([
-      "img/in-1.jpg",
-      "img/in-2.jpg",
-      "img/in-3.jpg",
-      "img/in-4.jpg",
-      "img/in-5.jpg",
-      "img/in-6.jpg",
-      "img/in-7.jpg",
-      "img/in-8.jpg"
-    ], {duration: 2500});
+    $(function() {
+      $("#about").backstretch("img/banner.jpg");
+      $("figure:first").backstretch([
+        "img/out-1.jpg",
+        "img/out-2.jpg",
+        "img/out-3.jpg",
+        "img/out-4.jpg"
+      ], {duration: 5000});
+      $("figure:last").backstretch([
+        "img/in-1.jpg",
+        "img/in-2.jpg",
+        "img/in-3.jpg",
+        "img/in-4.jpg",
+        "img/in-5.jpg",
+        "img/in-6.jpg",
+        "img/in-7.jpg",
+        "img/in-8.jpg"
+      ], {duration: 2500});
+    });
   </script>
 </body>
 </html>
 
 <!--an OCD design-->
 
-<!--! validate HTML 7 CSS-->
+<!--! validate HTML & CSS-->
